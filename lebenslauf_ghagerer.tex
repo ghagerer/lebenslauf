@@ -1,0 +1,197 @@
+\documentclass[%
+xcolor=svgnames,%
+style=classic,% OR
+% style=casual,% OR
+% style=oldstyle,%
+]{komacv}
+
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\ifoot{Lebenslauf~\firstname~\familyname}
+\ofoot{\pagemark/\totalpagemark}
+\renewcommand*{\familydefault}{\sfdefault}
+
+
+
+%    PERSONAL DATA
+\renewcommand*{\title}{Lebenslauf}% PDF metadata
+\renewcommand*{\firstname}{Gerhard}
+\renewcommand*{\familyname}{Hagerer}
+\renewcommand*{\acadtitle}{M.\,Sc. (TUM)}
+\renewcommand*{\addressstreet}{Buschingstra\ss e 7}
+\renewcommand*{\addresscity}{81677 M\"unchen}
+\renewcommand*{\address}[2]{\addressstreet{#1}\addresscity{#2}}
+\renewcommand*{\mobile}{015154729954}
+\renewcommand*{\phonenr}{08944387750}
+\renewcommand*{\faxnr}{032223377228}
+\renewcommand*{\email}{ghagerer@posteo.de}
+% \renewcommand*{\cvquote}{\enquote{Convinced I grew that neither earth should perish, \\nor one of the souls it treasured.}} %p.373
+% \renewcommand\phonesymbol{Tel.~}
+
+
+%    PICTURE
+\photo[mframe]{3cm}{profilbild.jpg}
+
+
+\begin{document}
+\raggedbottom
+
+\maketitle
+
+
+
+\section{Pers\"onliche Information}
+
+\cvitem{Geburtsdatum}{10.11.1986}
+\cvitem{Nationalit\"at}{Deutsch}
+\cvitem{Lebensstand}{Ledig}
+\cvitem{Steuer IDNr.}{79013128459}
+
+
+
+\section{Ausbildung}
+
+\cventry
+{1997 \newline -- 30.06.2006}
+{Luitpoldgymnasium M\"unchen}{}
+{Abitur}{Note 2,0}
+{Leistungskurse: Mathe, Latein. Sonstige Abiturf\"acher: Physik, Ethik}
+
+\cventry
+{01.04.2010 \newline -- 02.10.2013}
+{Technische Universit\"at M\"unchen}{}
+{B.Sc.}{Note 2,3}
+{Studium der Informatik}
+
+\cventry
+{17.05.2014 \newline -- 17.05.2016}
+{Technische Universit\"at M\"unchen}{}
+{M.Sc.}{Note 1,7}
+{Studium der Informatik}
+
+
+
+\section{Beruf}
+
+
+\subsection{Ersatzdienst}
+
+\cventry
+{04.09.2006 \newline -- 31.05.2007}
+{Zivildienst}
+{Caritas Werkstatt f\"ur behinderte Menschen}{M\"unchen}{}
+{Betreuung von geistig behinderten Menschen bei der Arbeit.}
+
+
+\subsection{Studentische Jobs in Teilzeit}
+
+\cventry
+{01.07.2009 \newline -- 31.03.2012}
+{Stud. Hilfskraft}
+{Institut f\"ur Informatik}{TU M\"unchen}{}
+{Kinder-Workshops und Messevertretung der Studienberatung}
+
+\cventry
+{10.03.2010 \newline -- 17.07.2011}
+{Stud. Hilfskraft}
+{Fakult\"at f\"ur Maschinenwesen}{TU M\"unchen}{}
+{PHP-Webentwicklung am Lehrstuhl f\"ur Leichtbau (mit Unterbrechungen)}
+
+\cventry
+{15.05.2015 \newline -- 15.08.2015}
+{Stud. Hilfskraft}
+{Institut f\"ur Informatik}{TU M\"unchen}{}
+{Android-Entwicklung (u.a.) bei der Social Commputing Group.}
+
+\cventry
+{15.10.2015 \newline -- 14.05.2016}
+{Werkstudent}
+{audEERING GmbH}{Gilching}{}
+{Werkstudent als Softwareentwickler.}
+
+
+\subsection{Professionelle Jobs}
+
+\cventry
+{15.05.2016 \newline -- 31.07.2016}
+{Software Engineer}
+{audEERING GmbH}{Gilching}{Prof. Schuller}
+{Vollzeit, Android apps, Web Services, Audiosignalverarbeitung, Maschinelles Lernen.}
+
+\cventry
+{01.08.2016 \newline -- 30.09.2017}
+{Software Engineer}
+{audEERING GmbH}{Gilching}
+{Prof. Schuller}
+{80\% Teilzeit, Android apps, Web Services, Audiosignalverarbeitung, Maschinelles Lernen.}
+
+\cventry
+{01.08.2016 \newline -- 30.09.2017}
+{Wiss. Angestellter}
+{Chair of Complex and Intelligent Systems}{Universit\"at Passau}
+{Prof. Schuller}
+{20\% Teilzeit, Audiosignalverarbeitung und Maschinelles Lernen f\"ur das EU-Projekt DE-ENIGMA}
+
+\cventry
+{01.10.2017 \newline -- 30.06.2018}
+{Wiss. Angestellter}
+{Chair of Embedded Intelligence for Health Care \& Wellbeing}{Universit\"at Augsburg}
+{Prof. Schuller}
+{Vollzeit, Audiosignalverarbeitung und Maschinelles Lernen f\"ur das EU-Projekt DE-ENIGMA}
+
+\section{Sprachen}
+\cvitemwithcomment{Deutsch}{flie\ss end}{Muttersprache}
+\cvitemwithcomment{English}{flie\ss end}{in Wort und Schrift}
+
+
+
+
+
+\iffalse
+\section{Computer Knowledges}
+\raggedright
+In my time I didn't have the opportunity to acquire computer knowledges but I am willing to learn the following programs and languages:
+
+\cvdoubleitem{accounting}{GnuCash}{picture editing}{gimp}
+
+\cvdoubleitem{office}{\LaTeX,\\LibreOffice}{languages}{lua, html}
+
+\newpage
+
+\section{All Elements}
+
+\subsection{cvitem}
+\cvitem{header}{cvitem text
+  \begin{compactenum}
+  \item compactenum item one
+  \item compactenum item two
+  \end{compactenum}
+}
+
+\subsection{cvdoubleitem}
+\cvdoubleitem{1st header}{1st text}{2nd header}{2nd text}
+
+\subsection{cvlistitem}
+\cvlistitem{cvlistitem item1}
+\cvlistitem{cvlistitem item2}
+
+\subsection{cvlistdoubleitem}
+\cvlistdoubleitem{item1}{item2}
+\cvlistdoubleitem{item3}{item4}
+ 
+\subsection{cventry}
+\cventry{years}{degree/job title}{e.\,g. institution/employer}{e.\,g. localization}{e.\,g. grade}{comment/job description}
+
+\subsection{cvitemwithcomment}
+\cvitemwithcomment{header}{text}{comment}
+
+\subsection{links}
+\link[link description]{link}
+
+\httplink[http link description]{url}
+
+\emaillink[e-mail link description]{e-mail address}
+
+\fi
+
+\end{document}
